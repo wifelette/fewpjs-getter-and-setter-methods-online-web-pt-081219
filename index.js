@@ -1,3 +1,5 @@
+const PI = Math.PI;
+
 class Circle {
   constructor(radius) {
     this.radius = radius;
@@ -12,18 +14,18 @@ class Circle {
   }
 
   get circumference() {
-    return Math.PI * this.diameter;
+    return PI * this.diameter;
   }
 
   set circumference(circumference) {
-    this.radius = circumference / (Math.PI * 2);
+    this.radius = circumference / (PI * 2);
   }
 
   get area() {
-    return Math.PI * this.radius ** 2;
+    return PI * this.radius ** 2;
   }
 
   set area(area) {
-    this.radius = Math.sqrt(area / Math.PI);
+    this.radius = Math.sqrt(area / PI);
   }
 }
